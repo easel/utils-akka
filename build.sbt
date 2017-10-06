@@ -5,7 +5,7 @@ scalaVersion in ThisBuild := scalaV212
 
 organization := "io.github.easel"
 name := "utils-akka"
-version := "0.0.1"
+version := "0.0.2-SNAPSHOT"
 isSnapshot := version.value.contains("-SNAPSHOT")
 val akkaVersion = "2.5.6"
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % akkaVersion
