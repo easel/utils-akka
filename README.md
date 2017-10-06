@@ -1,5 +1,13 @@
 # Utilities for Akka
 
+This package is published for both Scala 2.11 and 2.12 via bintray (soon JCenter). 
+
+To use in an SBT project:
+```$scala
+resolvers in ThisBuild += Resolver.bintrayRepo("easel", "maven"),
+libraryDependencies in ThisBuild += "io.github.easel" %% "utils-akka" % "0.0.1"
+```
+
 ## ObservableBuffer
 
 Adds a backpressuring buffer to an akka stream that publishes the current buffer
