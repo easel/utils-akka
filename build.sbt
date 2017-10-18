@@ -9,9 +9,11 @@ version := "0.0.2-SNAPSHOT"
 isSnapshot := version.value.contains("-SNAPSHOT")
 val akkaVersion = "2.5.6"
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % akkaVersion
-libraryDependencies += "com.typesafe.akka" %% "akka-stream" % akkaVersion
+libraryDependencies += "com.typesafe.akka" %% "akka-cluster" % akkaVersion % "provided"
+libraryDependencies += "com.typesafe.akka" %% "akka-cluster-sharding" % akkaVersion % "provided"
+libraryDependencies += "com.typesafe.akka" %% "akka-stream" % akkaVersion % "provided"
 libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % akkaVersion % "test"
-libraryDependencies += "com.github.pathikrit" %% "better-files" % "2.17.1"
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.1"
+libraryDependencies += "com.github.pathikrit" %% "better-files" % "2.17.1" % "provided"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.1" % "provided"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
